@@ -1,5 +1,2 @@
-phrase = "Happy Thanksgiving"
-
-print(phrase.upper())
-print(phrase.find("T"))
-print(phrase.replace("Happy", "Merry"))
+price = 5
+print(not price == 10)
