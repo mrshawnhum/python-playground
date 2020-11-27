@@ -1,5 +1,5 @@
-first = float(input("First: "))
-second = float(input("Second: "))
-sum = first + second
+phrase = "Happy Thanksgiving"
 
-print("Sum: " + str(sum))
+print(phrase.upper())
+print(phrase.find("T"))
+print(phrase.replace("Happy", "Merry"))
