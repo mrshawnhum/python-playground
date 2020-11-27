@@ -1,4 +1,5 @@
-birth_year = input("What year was you born in? ")
-age = 2020 - int(birth_year)
+first = float(input("First: "))
+second = float(input("Second: "))
+sum = first + second
 
-print(age)
+print("Sum: " + str(sum))
