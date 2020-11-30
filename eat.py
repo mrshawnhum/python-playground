@@ -1,4 +1,9 @@
-i = 1
-while i <= 5:
-    print(str(i))
-    i = i + 1
+names = [
+    "Shawn",
+    "Manav",
+    "Courtney",
+    "Dyeshia",
+    "Connor"
+]
+names[0] = "Shawn Humphreys"
+print(names[0:3])
