@@ -1,7 +1,9 @@
-price = 20
+weight = int(input("Weight: "))
+unit = input("(K)g or (L)bs: ")
 
-if price > 22:
-    print("That'll be " + str(price) + " please!")
-    print("Thank you for your order!")
-elif price < 22:
-    print("Please add $" + str(int(22 - price )) + " to complete order!")
+if unit.upper() == "K":
+    converted = weight / 0.45
+    print("Weight in Lbs: " + str(converted))
+else:
+    converted = weight * 0.45
+    print("Weight in Kgs: " + str(converted))
