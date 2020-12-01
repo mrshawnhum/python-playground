@@ -1,8 +1,15 @@
-# tuple
-m = (1, 2, 3)
+# sets
+myset = set()
+print(myset)
 
-# list
-my_list = [1, 2, 3]
+myset.add(1)
+print(myset)
 
-print(m[0:2])
-print(my_list[0:2])
+myset.add(2)
+print(myset)
+
+myset.add(2)
+print(myset)
+
+mylist = [1, 1, 1, 1, 2, 2, 3, 3]
+print(set(mylist))
