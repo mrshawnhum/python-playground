@@ -1,15 +1,17 @@
-# sets
-myset = set()
-print(myset)
+myfile = open("myfile.txt")
+print(myfile.read())
+myfile.seek(0)
+print(myfile.read())
 
-myset.add(1)
-print(myset)
+myfile.seek(0)
+myfile.readlines()
 
-myset.add(2)
-print(myset)
+with open("myfile.txt", mode="a") as f:
+    f.write("Add new file contexts using write method")
+    print(f)
 
-myset.add(2)
-print(myset)
+with open("example.txt", mode="w") as tx:
+    tx.write("File was created using python")
 
-mylist = [1, 1, 1, 1, 2, 2, 3, 3]
-print(set(mylist))
+with open("example.txt", mode="r") as tx:
+    print(tx.read())
