@@ -1,8 +1,9 @@
-print("This is a string {}".format("INSERTED"))
+my_dict = {"key1": "value1", "key2": "value2"}
 
-print("The {1} {0} {2}".format("Old", "Crazy", "Man"))
+print(my_dict["key1"])
 
-print("The {s} {h} {f}".format(s="Sleepy", h="Hungry", f="Fisherman"))
+prices = {"apple": 2.99, "oranges": 1.99, "milk": 4.99}
+print(prices["milk"])
 
-name = "Shawn"
-print(f"Hello, my name is {name}")
+d = {"key1":['a', 'b', 'c', 'd']}
+print(d["key1"][1].upper())
