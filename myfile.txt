@@ -1,4 +1,0 @@
-This is an example file
-used to practice python I/O.
-Happy Holidays!
-Add new file contexts using write methodAdd new file contexts using write methodAdd new file contexts using write methodAdd new file contexts using write methodAdd new file contexts using write methodAdd new file contexts using write methodAdd new file contexts using write methodAdd new file contexts using write method
