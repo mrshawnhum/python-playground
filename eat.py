@@ -1,17 +1,11 @@
-work_hours = [("Abby", 100), ("Billy", 400), ("Cassie", 800)]
+class Dog():
+    def __init__(self,breed,name,spots):
+        self.breed = breed
+        self.name = name
+        self.spots = spots
 
-def employee_check(work_hours):
-    current_max = 0
-    employee_of_month = ''
+my_dog = Dog(breed='Lab', name='Daisy', spots=False)
 
-    for employee,hours in work_hours:
-        if hours > current_max:
-            current_max = hours
-            employee_of_month = employee
-        else:
-            pass
-
-    return(employee_of_month, current_max)
-
-result = employee_check(work_hours)
-print(result)
+print(my_dog.breed)
+print(my_dog.spots)
+print(my_dog.name)
