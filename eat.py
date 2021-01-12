@@ -1,29 +1,18 @@
-def create_cubes(n):
-    result = []
-    for x in range(n):
-        yield x**3
+from collections import Counter
+from collections import defaultdict
+from collections import namedtuple
 
-for x in create_cubes(10):
-    print(x)
+mylist = [1, 1, 1, 2, 2, 3, 2]
 
-def gen_fibon(n):
+# print(Counter(mylist))
 
-    a = 1
-    b = 1
-    for i in range(n):
-        yield a
-        a,b = b,a+b
+d = {'a':10}
+print(d)
 
-for num in gen_fibon(10):
-    print(num)
+d = defaultdict(lambda: 0)
+d['correct'] = 100
+print(d['correct'])
 
-def simple_gen():
-    for x in range(3):
-        yield x
-
-for num in simple_gen():
-    print (num)
-
-g = simple_gen()
-
-print(next(g))
+Dog = namedtuple('Dog', ['age', 'breed', 'name'])
+sammy = Dog(age=5, breed='Husky', name='Same')
+print(sammy)
