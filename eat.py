@@ -1,37 +1,29 @@
-def func():
-    return 1
+def create_cubes(n):
+    result = []
+    for x in range(n):
+        yield x**3
 
-example = func()
-print(example)
+for x in create_cubes(10):
+    print(x)
 
-def hello():
-    return "Hi Shawn!"
+def gen_fibon(n):
 
-def other(some_def_func):
-    print("Other code here")
-    print(some_def_func())
+    a = 1
+    b = 1
+    for i in range(n):
+        yield a
+        a,b = b,a+b
 
-other(hello)
+for num in gen_fibon(10):
+    print(num)
 
-def new_dec(orginal_func):
-    def wrap_func():
+def simple_gen():
+    for x in range(3):
+        yield x
 
-        print("Some extra code")
+for num in simple_gen():
+    print (num)
 
-        orginal_func()
+g = simple_gen()
 
-        print("Some more code")
-    
-    return wrap_func
-
-def fuc_needs_dec():
-    print("Lets get decorated here")
-
-decorated_func = new_dec(fuc_needs_dec)
-decorated_func()
-
-@new_dec
-def fuc_needs_dec():
-    print("This decorator works!")
-
-fuc_needs_dec()
+print(next(g))
