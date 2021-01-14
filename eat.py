@@ -1,7 +1,15 @@
-from datetime import datetime
+import re
 
-mytime = datetime.time(13,20,1,20)
-today = datetime.date.today()
+text = "Random phone number is 123-445-6789"
 
-# print(today.year)
-# print(mytime.hour)
+pattern = 'phone'
+matches = re.findall('phone', text)
+# print (matches)
+
+phone = re.search(r'\d{3}-\d{3}-\d{4}', text)
+# print(phone)
+
+phone_pattern = re.compile(r'(\d{3})-(\d{3})-(\d{4})')
+results = re.search(phone_pattern,text)
+
+print(results.group())
